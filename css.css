@@ -1,0 +1,258 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(227, 220, 220);
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: rgb(227, 220, 220);
+    padding: 1em 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+header nav .logo img {
+    height: 4.5rem;
+    margin: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 1em;
+    flex: 1;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: #555;
+    color: #fff;
+    border-bottom: 4px solid #ff4b4b
+}
+
+.hero {
+    background: url('pic4.jpg') no-repeat center center/cover;
+    color: white;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .btn {
+    background-color: #ff4b4b;
+    color: white;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1em;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px; 
+    font-weight: 500; 
+}
+.btn:hover {
+    background-color: #df1e1e; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.hover-image {
+    text-align: center;
+    margin: 1em 0;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display:block;
+}
+
+.hover-image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(238, 190, 190, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay .text {
+    font-size: 3em; 
+    color:rgb(133, 44, 24);
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 700; 
+    animation: pulse 2s infinite, glow 1.5s infinite, rotate 5s infinite;
+}
+
+#about {
+    padding: 2em 1em;
+    text-align: center;
+    font-family: "Poetsen One",sans-serif;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1em;
+}
+#products {
+    padding: 2em 1em;
+    background-color: #rgb(227, 220, 220);
+    text-align: center;
+    font-family: "Poetsen One",sans-serif;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.product {
+    background: white;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 300px;
+    font-family: "Poetsen One",sans-serif;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ff4b4b;
+}
+
+#video {
+    padding: 2em 1em;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2em 1em;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.company-info {
+    max-width: 300px;
+}
+
+.company-info img {
+    height: 50px;
+    margin-bottom: 1em;
+}
+
+.contact-form {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form  label {
+    margin: 0.5em 0 0.2em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: none;
+    border-radius: 5px;
+    background: #f8f8f8;
+}
+.contact-form  button {
+    background-color: #ff4b4b;
+    color: white;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form  button:hover {
+    background-color: #e04444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-grid {
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .footer-content {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        margin-top: 2em;
+    }
+    .products{
+        text-align: center;
+    }
+}
