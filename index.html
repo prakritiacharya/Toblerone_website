@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Candy - The sweetest candy in town!">
+    <title>Candy</title>
+    <link rel="stylesheet" href="css.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sevillana&family=Sriracha&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo1.png" alt="Candy Logo">
+            </div>
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="products">Products</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to ABC Candy</h1>
+                <p>The sweetest candy in town!</p>
+                <a href="products" class="btn">Explore Our Candy</a>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <h2>About ABC Candy</h2>
+            <p>A Toblerone is a Swiss chocolate bar made with honey and almond nougat. Created in 1908 by Theodor Tobler, Toblerone is now available around the world and is instantly recognized thanks to its unique chocolate peak shape and unmistakable packs.</p>
+            <p>Jean Tobler owned his own confectionery shop in Bern, Switzerland, producing chocolate confectionery from products supplied by other manufactures.</p>
+        </section>
+        <!-- Image Section -->
+        <section class="hover-image">
+            <div class="image-container">
+                <img src="pic2.webp" alt="Hover Image">
+                <div class="overlay">
+                    <div class="text">Top Seller</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products section -->
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="pro1.webp" alt="Candy 1">
+                    <h3>Mother's Day Toblerone Bar</h3>
+                    <p>$28.95</p>
+                </div>
+                <div class="product">
+                    <img src="pro2.webp" alt="Candy 2">
+                    <h3>Father's Day Toblerone Bar</h3>
+                    <p>$23.16</p>
+                </div>
+                <div class="product">
+                    <img src="pro3.webp" alt="Candy 3">
+                    <h3>Celevrations gift box</h3>
+                    <p>$20.95</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video -->
+        <section id="video">
+            <h2>Watch Our Story</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0SvuKc64DRo?si=2F50NRL6e4hjl07a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </section>
+    </main>
+
+    <!-- Footer with company info and contact form -->
+    <footer>
+        <div class="footer-content">
+            <div class="company-info">
+                <img src="logo1.png" alt="Candy Logo">
+                <p>address</p>
+                <p>Email: abc@.com | Phone: (000) 000-0000</p>
+            </div>
+            <div class="contact-form">
+                <h3>Contact Us</h3>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
